@@ -31,6 +31,7 @@ lint:
 	@$(VENV)/flake8 \
 		pipeline \
 		data \
+		tests \
 		run.py
 
 fmt:
