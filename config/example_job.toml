@@ -1,0 +1,10 @@
+[job]
+name = "Example Job"
+retries = 3
+log = "INFO"
+
+[compute]
+model = {name = "Example Model", type = "Transopt"}
+
+[filter]
+path = "../config_lib/example_filter.json"

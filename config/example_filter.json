@@ -1,0 +1,16 @@
+{
+    "include": [
+        {
+            "origin": {
+                "country": "US"
+            }
+        }
+    ],
+    "exclude": [
+        {
+            "origin": {
+                "country": "CA"
+            }
+        }
+    ]
+}

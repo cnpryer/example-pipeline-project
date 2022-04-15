@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "eamodio.gitlens",
+        "davidanson.vscode-markdownlint",
+        "ms-python.python",
+        "njpwerner.autodocstring"
+    ]
+}
