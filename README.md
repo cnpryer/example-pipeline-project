@@ -36,7 +36,15 @@ This project processes shipment data from a denormalized, queried format.
 make run
 ```
 
-### Help
+#### Add `Flow` to `prefect` Dashboard
+
+Create a `prefect` project and register the `Flow` to the project.
+
+```shell
+prefect create project "Project Name"
+```
+
+### For Help
 
 ```shell
 make help
