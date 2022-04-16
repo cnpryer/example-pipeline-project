@@ -148,10 +148,6 @@ def create_df() -> pl.DataFrame:
     return df
 
 
-df = create_df()
-
-df.sample()
-
-# %%
-# save ./data/shipments.csv
-df.write_csv(RES_FILEPATH)
+if __name__ == "__main__":
+    df = create_df()
+    df.write_csv(RES_FILEPATH)

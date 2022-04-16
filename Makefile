@@ -1,4 +1,4 @@
-VENV = venv/bin
+ACTIVATE = source venv/bin/activate
 
 .PHONY: help clean lint fmt test pre-commit run
 
@@ -7,7 +7,7 @@ help:
 	@echo "Use 'make <command>'"
 	@echo ""
 	@echo "commands"
-	@echo "  venv        create venv and install project"
+	@echo "  venv        create venv and install dependencies"
 	@echo "  clean       remove cleanable files"
 	@echo "  lint        run linters"
 	@echo "  fmt         run formaters"
@@ -19,29 +19,29 @@ help:
 
 venv:
 	@python -m venv venv
-	@$(VENV)/pip install -U pip
-	@$(VENV)/pip install -r requirements.txt -r requirements-dev.txt
-	@$(VENV)/pip install -e .
+	@$(ACTIVATE) && poetry install
 
 clean:
 	-@rm -rf venv
 	-@rm -fr `find . -name __pycache__`
+	-@rm -rf .pytest_cache
 
 lint:
-	@$(VENV)/flake8 \
-		pipeline \
+	@$(ACTIVATE) && poetry run flake8 \
+		business \
+		core \
 		data \
 		tests \
 		run.py
 
 fmt:
-	@$(VENV)/isort .
-	@$(VENV)/black .
+	@$(ACTIVATE) && poetry run isort . \
+		&& poetry run black .
 
 test: lint
-	@$(VENV)/pytest
+	@$(ACTIVATE) && poetry run pytest
 
 pre-commit: test fmt
 
 run: venv
-	@$(VENV)/python run.py
+	@$(ACTIVATE) && poetry run python run.py
