@@ -51,6 +51,7 @@ jobs:
           business \
           core \
           data \
+          tasks \
           tests \
           run.py
 

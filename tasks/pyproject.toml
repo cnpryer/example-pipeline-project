@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "task"
+name = "tasks"
 version = "0.1.0"
 description = ""
 authors = ["Chris Pryer <cnpryer@gmail.com>"]

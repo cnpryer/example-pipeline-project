@@ -7,7 +7,7 @@ packages = [
     { include = "business" },
     { include = "core" },
     { include = "data" },
-    { include = "task" }
+    { include = "tasks" }
 ]
 
 [tool.poetry.dependencies]
