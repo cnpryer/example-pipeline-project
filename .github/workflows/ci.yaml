@@ -55,6 +55,16 @@ jobs:
           tests \
           run.py
 
+      - name: Run mypy
+        run: |
+          poetry run mypy \
+          business \
+          core \
+          data \
+          tasks \
+          tests \
+          run.py
+
       - name: Run fmt check
         run: poetry run black . --check
 

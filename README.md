@@ -1,6 +1,6 @@
 # example-pipeline
 
-Example data pipeline project to experiment with products.
+Example data pipeline project.
 
 ## Subject
 
@@ -9,16 +9,37 @@ Example data pipeline project to experiment with products.
 - Target format requirement data manipulation
 - Task failure due to unexpected data
 
+This project follows a traditional data flow pattern.
+
+```mermaid
+graph
+    A[Sources] --> B[Staging]
+    B --> C[Managed Storage]
+    C --> D[Task]
+    C --> E[Task]
+    C --> F[Task]
+    D --> G[Compute]
+    E --> H[Compute]
+    F --> I[Compute]
+    G --> J[Managed Storage]
+    H --> K[Managed Storage]
+    I --> L[Managed Storage]
+    J --> M[Users]
+    K --> M
+    L --> M
+```
+
 ## Goals
+
+In addition to creating a basic data pipeline project, this project will showcase and justify the different tools that could be used.
 
 - Evaluate frameworks for centralizing visibility
   - Design
   - Failures
   - Logging
   - Metrics
-- Evaluate `DataFrame` libraries (specifically `polars`)
-- Evaluate scale from both design and implementation perspectives
-- Evaluate system flexibility and infrastructure requirements
+- Evaluate `DataFrame` libraries for flexibility, performance, and API design
+- Evaluate project flexibility and infrastructure requirements
 
 ## The Data
 
@@ -33,19 +54,18 @@ This project processes shipment data from a denormalized, queried format.
 ### Run Jobs
 
 ```shell
-make run
-```
-
-#### Add `Flow` to `prefect` Dashboard
-
-Create a `prefect` project and register the `Flow` to the project.
-
-```shell
-prefect create project "Project Name"
+python run.py jobs --offline
 ```
 
 ### For Help
 
-```shell
+```sh
+# dev commands
 make help
+
+# general run.py help
+python run.py --help
+
+# check help messages for each subcommand
+python run.py jobs --help
 ```

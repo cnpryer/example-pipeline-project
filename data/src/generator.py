@@ -86,7 +86,7 @@ for i in range(len(CITIES) - 1, -1, -1):
     dest_country += [COUNTRIES[i]] * (N // len(COUNTRIES))
 
 # fill any remaining rows with missing data
-nulls = [None] * (N - len(origin_city))
+nulls = [""] * (N - len(origin_city))
 origin_city += nulls
 origin_state += nulls
 origin_zip += nulls
@@ -100,13 +100,13 @@ weight_uom = []
 for i in range(len(WEIGHT_UOMS)):
     weight_uom += [WEIGHT_UOMS[i]] * (N // len(WEIGHT_UOMS))
 
-weight_uom += [None] * (N - len(weight_uom))
+weight_uom += [""] * (N - len(weight_uom))
 
 quantity_uom = []
 for i in range(len(QUANTITY_UOMS)):
     quantity_uom += [QUANTITY_UOMS[i]] * (N // len(QUANTITY_UOMS))
 
-quantity_uom += [None] * (N - len(quantity_uom))
+quantity_uom += [""] * (N - len(quantity_uom))
 
 linehaul_cost_uom = []
 for i in range(len(LINEHAUL_COST_UOMS)):
@@ -114,7 +114,7 @@ for i in range(len(LINEHAUL_COST_UOMS)):
         N // len(LINEHAUL_COST_UOMS)
     )
 
-linehaul_cost_uom += [None] * (N - len(linehaul_cost_uom))
+linehaul_cost_uom += [""] * (N - len(linehaul_cost_uom))
 
 # %%
 # create shipments

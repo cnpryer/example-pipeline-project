@@ -14,7 +14,6 @@ help:
 	@echo "  fmt-check          run formatting check"
 	@echo "  test               run all tests"
 	@echo "  pre-commit         run pre-commit standardization"
-	@echo "  run                run prepared jobs from run.py"
 	@echo "  dashboard-start    start prefect dashboard (docker required)"
 	@echo "  dashboard-agent    create prefect local dashboard agent"
 	@echo ""
@@ -23,11 +22,13 @@ help:
 venv:
 	@python -m venv venv
 	@$(ACTIVATE) && poetry install
+	@$(ACTIVATE) && pre-commit install
 
 clean:
 	-@rm -rf venv
 	-@rm -fr `find . -name __pycache__`
 	-@rm -rf .pytest_cache
+	-@rm -rf .mypy_cache
 
 lint: venv
 	@$(ACTIVATE) && poetry run flake8 \
@@ -45,13 +46,16 @@ fmt-check: venv
 	@$(ACTIVATE) && poetry run isort . --check \
 		&& poetry run black . --check
 
-test: venv lint fmt-check
+test: venv
 	@$(ACTIVATE) && poetry run pytest
 
 pre-commit: test fmt
-
-run: venv
-	@$(ACTIVATE) && poetry run python run.py
+	@$(ACTIVATE) && poetry run mypy \
+		business \
+		core \
+		data \
+		tests \
+		run.py
 
 dashboard-start: venv
 	@$(ACTIVATE) && poetry run prefect backend server \
