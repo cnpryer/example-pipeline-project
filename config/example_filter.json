@@ -1,16 +1,22 @@
-{
-    "include": [
-        {
-            "origin": {
+[
+    {
+        "data": {
+            "name": "origin",
+            "values": {
                 "country": "US"
             }
-        }
-    ],
-    "exclude": [
-        {
-            "origin": {
+        },
+        "type": "include",
+        "operator": "equal-to"
+    },
+    {
+        "data": {
+            "name": "origin",
+            "values": {
                 "country": "CA"
             }
-        }
-    ]
-}
+        },
+        "type": "exclude",
+        "operator": "equal-to"
+    }
+]
