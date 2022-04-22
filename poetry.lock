@@ -53,7 +53,7 @@ python-versions = "*"
 name = "cfgv"
 version = "3.3.1"
 description = "Validate configuration and produce human readable error messages."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6.1"
 
@@ -134,7 +134,7 @@ test = ["pytest", "pytest-rerunfailures", "pytest-xdist", "pre-commit"]
 name = "distlib"
 version = "0.3.4"
 description = "Distribution utilities"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -183,7 +183,7 @@ tls = ["pyOpenSSL (>=17.5.0)", "cryptography (>=3.4.7)", "idna (>=2.0.0)"]
 name = "filelock"
 version = "3.6.0"
 description = "A platform independent file lock."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -247,7 +247,7 @@ python-versions = "*"
 name = "identify"
 version = "2.4.12"
 description = "File identification library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -379,7 +379,7 @@ python-versions = "*"
 name = "mypy"
 version = "0.942"
 description = "Optional static typing for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -405,7 +405,7 @@ python-versions = "*"
 name = "nodeenv"
 version = "1.6.0"
 description = "Node.js virtual environment builder"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -467,7 +467,7 @@ pytzdata = ">=2020.1"
 name = "platformdirs"
 version = "2.5.1"
 description = "A small Python module for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -489,7 +489,7 @@ testing = ["pytest", "pytest-benchmark"]
 
 [[package]]
 name = "polars"
-version = "0.13.23"
+version = "0.13.24"
 description = "Blazingly fast DataFrame library"
 category = "main"
 optional = false
@@ -499,16 +499,16 @@ python-versions = ">=3.7"
 numpy = ">=1.16.0"
 
 [package.extras]
-pandas = ["pyarrow (>=4.0)", "pandas"]
-fsspec = ["fsspec"]
 connectorx = ["connectorx"]
+pandas = ["pyarrow (>=4.0)", "pandas"]
 pyarrow = ["pyarrow (>=4.0)"]
+fsspec = ["fsspec"]
 
 [[package]]
 name = "pre-commit"
 version = "2.18.1"
 description = "A framework for managing and maintaining multi-language pre-commit hooks."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -815,7 +815,7 @@ python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 name = "tomli"
 version = "2.0.1"
 description = "A lil' TOML parser"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -839,7 +839,7 @@ python-versions = ">= 3.5"
 name = "typing-extensions"
 version = "4.1.1"
 description = "Backported and Experimental Type Hints for Python 3.6+"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -860,7 +860,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 name = "virtualenv"
 version = "20.14.1"
 description = "Virtual Python Environment builder"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
 
@@ -901,7 +901,7 @@ heapdict = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "05339a28b1ef25b13dafbd70aa308791dc6eb41e0f8da94a604ff5e76bcbba85"
+content-hash = "8f97d5ae03b20b6d5c1b92c808f6e3dcbe1f4805f1e43cc8fd57c565ee713893"
 
 [metadata.files]
 atomicwrites = [
@@ -1214,11 +1214,11 @@ pluggy = [
     {file = "pluggy-1.0.0.tar.gz", hash = "sha256:4224373bacce55f955a878bf9cfa763c1e360858e330072059e10bad68531159"},
 ]
 polars = [
-    {file = "polars-0.13.23-cp37-abi3-macosx_10_7_x86_64.whl", hash = "sha256:bb7dbc8d1438071a7b0f06b780e098bea35bcab7bccd933faf31e7c5e8e4dd5b"},
-    {file = "polars-0.13.23-cp37-abi3-macosx_11_0_arm64.whl", hash = "sha256:5db389033a51cbfea6cc02fc274294642048e43f6ace355271588206236a4b0d"},
-    {file = "polars-0.13.23-cp37-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:672c265fe24df6279e0801d6cb24b7ffef2b385b8e43231c3ad833ed882f6093"},
-    {file = "polars-0.13.23-cp37-abi3-win_amd64.whl", hash = "sha256:9b7b9acde43d898a4f7de667b173ded4862edaccfda25cb03013751d3b788b09"},
-    {file = "polars-0.13.23.tar.gz", hash = "sha256:150138c4e08603c61dabb38519761bf3c17ed8dccec24ab3469479b5f3d9ea74"},
+    {file = "polars-0.13.24-cp37-abi3-macosx_10_7_x86_64.whl", hash = "sha256:2ab35458b8281921df45c550fb94601fa7f44d6b683d1f73c21c95d82bd30602"},
+    {file = "polars-0.13.24-cp37-abi3-macosx_11_0_arm64.whl", hash = "sha256:3a2b1abab14fc365a043eefdd7f5157287aa9ea13fb220bd0744cfbb8fa32f1a"},
+    {file = "polars-0.13.24-cp37-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:09f635bfdfa16d06c168b8b1e4bdb4f074ca3e6709dc15c24d288d11841423f1"},
+    {file = "polars-0.13.24-cp37-abi3-win_amd64.whl", hash = "sha256:babf683b95b8e9df8ab68789b0d3146c6bca843ef4b3fa396f3ebbf942154d66"},
+    {file = "polars-0.13.24.tar.gz", hash = "sha256:2ecb9c1e37eb77b86d29b76d7f722e8c65b19486e2f57abff492335f2cb6b89f"},
 ]
 pre-commit = [
     {file = "pre_commit-2.18.1-py2.py3-none-any.whl", hash = "sha256:02226e69564ebca1a070bd1f046af866aa1c318dbc430027c50ab832ed2b73f2"},
