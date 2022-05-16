@@ -522,7 +522,7 @@ virtualenv = ">=20.0.8"
 
 [[package]]
 name = "prefect"
-version = "1.2.0"
+version = "1.2.1"
 description = "The Prefect Core automation and scheduling engine."
 category = "main"
 optional = false
@@ -901,7 +901,7 @@ heapdict = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "015c17f554aa32d22fce9f9d9001f521fac6f2afb267483ceae3ca4e1442bcd9"
+content-hash = "9f53f02e85845f5b7be2eb174181fbb98bc4f26fe784a6ac51fb9c0c2473265c"
 
 [metadata.files]
 atomicwrites = [
@@ -1226,8 +1226,8 @@ pre-commit = [
     {file = "pre_commit-2.18.1.tar.gz", hash = "sha256:5d445ee1fa8738d506881c5d84f83c62bb5be6b2838e32207433647e8e5ebe10"},
 ]
 prefect = [
-    {file = "prefect-1.2.0-py3-none-any.whl", hash = "sha256:27b5b6d3a425c7009ac6ab0a8b870864968ac3a0ca9f33c43d79bfc1505a3135"},
-    {file = "prefect-1.2.0.tar.gz", hash = "sha256:5a37d4e5228334b2535c4e0c0a26c565362489baf6f0d74bd6820032317e5e0c"},
+    {file = "prefect-1.2.1-py3-none-any.whl", hash = "sha256:417ebbed9921b7e0694527085ea7016ec1cf5a7cc37c86c67e745f81adc67204"},
+    {file = "prefect-1.2.1.tar.gz", hash = "sha256:f1172d5a4fab1e1ca1dcb1c077d49dcfb986d4041b2be28b0f359a762f002550"},
 ]
 psutil = [
     {file = "psutil-5.9.0-cp27-cp27m-manylinux2010_i686.whl", hash = "sha256:55ce319452e3d139e25d6c3f85a1acf12d1607ddedea5e35fb47a552c051161b"},
