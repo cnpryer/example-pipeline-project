@@ -12,7 +12,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.10"
-polars = "^0.13.25"
+polars = "^0.13.34"
 prefect = "^1.2.0"
 click = "^8.1.2"
 
