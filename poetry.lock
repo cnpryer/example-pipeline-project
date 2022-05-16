@@ -506,7 +506,7 @@ connectorx = ["connectorx"]
 
 [[package]]
 name = "pre-commit"
-version = "2.18.1"
+version = "2.19.0"
 description = "A framework for managing and maintaining multi-language pre-commit hooks."
 category = "dev"
 optional = false
@@ -901,7 +901,7 @@ heapdict = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "eb6e8516a836ee91c3b4d61a98cab35ddc1549e3eac31b3315e21f68427115a9"
+content-hash = "079cd856c8efc1eb6c84db29f791a086e5256b6baf5a566d9de9f767093b65fc"
 
 [metadata.files]
 atomicwrites = [
@@ -1222,8 +1222,8 @@ polars = [
     {file = "polars-0.13.25.tar.gz", hash = "sha256:a1aebf4d32ddbb6165671ff1671163eeb7ea0d42d77d5b532d2886002c565096"},
 ]
 pre-commit = [
-    {file = "pre_commit-2.18.1-py2.py3-none-any.whl", hash = "sha256:02226e69564ebca1a070bd1f046af866aa1c318dbc430027c50ab832ed2b73f2"},
-    {file = "pre_commit-2.18.1.tar.gz", hash = "sha256:5d445ee1fa8738d506881c5d84f83c62bb5be6b2838e32207433647e8e5ebe10"},
+    {file = "pre_commit-2.19.0-py2.py3-none-any.whl", hash = "sha256:10c62741aa5704faea2ad69cb550ca78082efe5697d6f04e5710c3c229afdd10"},
+    {file = "pre_commit-2.19.0.tar.gz", hash = "sha256:4233a1e38621c87d9dda9808c6606d7e7ba0e087cd56d3fe03202a01d2919615"},
 ]
 prefect = [
     {file = "prefect-1.2.1-py3-none-any.whl", hash = "sha256:417ebbed9921b7e0694527085ea7016ec1cf5a7cc37c86c67e745f81adc67204"},
