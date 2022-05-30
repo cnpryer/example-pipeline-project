@@ -489,7 +489,7 @@ testing = ["pytest", "pytest-benchmark"]
 
 [[package]]
 name = "polars"
-version = "0.13.37"
+version = "0.13.39"
 description = "Blazingly fast DataFrame library"
 category = "main"
 optional = false
@@ -499,9 +499,9 @@ python-versions = ">=3.7"
 numpy = ">=1.16.0"
 
 [package.extras]
-connectorx = ["connectorx"]
-pandas = ["pyarrow (>=4.0)", "pandas"]
 pyarrow = ["pyarrow (>=4.0)"]
+pandas = ["pyarrow (>=4.0)", "pandas"]
+connectorx = ["connectorx"]
 fsspec = ["fsspec"]
 
 [[package]]
@@ -901,7 +901,7 @@ heapdict = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "5de34580fc4016604a9947d45577fce3f420c135b9f7f89c46e766b3b37cec30"
+content-hash = "170e684e8548629c2647ed794f21bd4511e51284544f1d3b1e59b141e2c4dcfe"
 
 [metadata.files]
 atomicwrites = [
@@ -1214,12 +1214,12 @@ pluggy = [
     {file = "pluggy-1.0.0.tar.gz", hash = "sha256:4224373bacce55f955a878bf9cfa763c1e360858e330072059e10bad68531159"},
 ]
 polars = [
-    {file = "polars-0.13.37-cp37-abi3-macosx_10_7_x86_64.whl", hash = "sha256:cdaf1fbae4667231a6a0e185d87b85db19c349bc46c40844a8b0db3d562135bc"},
-    {file = "polars-0.13.37-cp37-abi3-macosx_11_0_arm64.whl", hash = "sha256:eb69cda8e1044a7775d3ffeb7416d2e99b8793c234103fb7698bf50d8ad35bfa"},
-    {file = "polars-0.13.37-cp37-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:4741bb0841f92453678cc136b56b98dc8f21f6c27a4d26d77236d71b5341c394"},
-    {file = "polars-0.13.37-cp37-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:29852d0140d3488f0ac5dcaf7cca58ce8203f2451e1a937b1abf3b28f675ae25"},
-    {file = "polars-0.13.37-cp37-abi3-win_amd64.whl", hash = "sha256:59f157586bf14711abddce67ee552b6f4baccc70e256d874e8508050ceafd521"},
-    {file = "polars-0.13.37.tar.gz", hash = "sha256:9eb41ed7ae6c07bd5dc9791282f2caa57f27ddab8f4230ceb49174590e22ea95"},
+    {file = "polars-0.13.39-cp37-abi3-macosx_10_7_x86_64.whl", hash = "sha256:cb28018e705f74517627bf9783c04791bb31bfaeecaf0ae4d399dd4f6b846c68"},
+    {file = "polars-0.13.39-cp37-abi3-macosx_11_0_arm64.whl", hash = "sha256:8becce2cdc246635489e34c163a407320b557e846ab8ab6753700826873e64ba"},
+    {file = "polars-0.13.39-cp37-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:12a666168245428e952ba79a79473af8d2a2eadef2866b097ffdb7b4af09118e"},
+    {file = "polars-0.13.39-cp37-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:cea1f8aa916c4bc1eaf0074e64352ddc5ec366c9d67dc27569f635eec6ef2fea"},
+    {file = "polars-0.13.39-cp37-abi3-win_amd64.whl", hash = "sha256:08e62158947e68f94b885119fd2e118c45659ce22300b693fa082e1dfcf8e905"},
+    {file = "polars-0.13.39.tar.gz", hash = "sha256:32bbed65eb6ff13dfbe4c3871769940db50d7a66078abf0155f8d17711270067"},
 ]
 pre-commit = [
     {file = "pre_commit-2.19.0-py2.py3-none-any.whl", hash = "sha256:10c62741aa5704faea2ad69cb550ca78082efe5697d6f04e5710c3c229afdd10"},
