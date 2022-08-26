@@ -32,6 +32,7 @@ lint: .venv
 	@poetry run flake8 \
 		business \
 		core \
+		tasks \
 		data \
 		tests \
 		run.py
@@ -47,10 +48,11 @@ fmt-check: .venv
 test: .venv
 	@poetry run pytest
 
-pre-commit: test fmt
+pre-commit: test fmt-check lint
 	@poetry run mypy \
 		business \
 		core \
+		tasks \
 		data \
 		tests \
 		run.py
