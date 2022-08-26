@@ -498,7 +498,7 @@ xlsx2csv = ["xlsx2csv (>=0.8.0)"]
 
 [[package]]
 name = "pre-commit"
-version = "2.19.0"
+version = "2.20.0"
 description = "A framework for managing and maintaining multi-language pre-commit hooks."
 category = "dev"
 optional = false
@@ -894,7 +894,7 @@ heapdict = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "06142162ce21d227323dc4c9c86ed908c90418965fe85a14bf4735a351ab7de6"
+content-hash = "48ae60a1cbae7f83980c5d8e7a86bbde75bb44c28d58a1e1a86d77400f2b9e31"
 
 [metadata.files]
 atomicwrites = [
@@ -1193,8 +1193,8 @@ polars = [
     {file = "polars-0.14.5.tar.gz", hash = "sha256:513c6f63356f34a359ce32f3b8069bc43a183f058d35320b013ef02a587a936a"},
 ]
 pre-commit = [
-    {file = "pre_commit-2.19.0-py2.py3-none-any.whl", hash = "sha256:10c62741aa5704faea2ad69cb550ca78082efe5697d6f04e5710c3c229afdd10"},
-    {file = "pre_commit-2.19.0.tar.gz", hash = "sha256:4233a1e38621c87d9dda9808c6606d7e7ba0e087cd56d3fe03202a01d2919615"},
+    {file = "pre_commit-2.20.0-py2.py3-none-any.whl", hash = "sha256:51a5ba7c480ae8072ecdb6933df22d2f812dc897d5fe848778116129a681aac7"},
+    {file = "pre_commit-2.20.0.tar.gz", hash = "sha256:a978dac7bc9ec0bcee55c18a277d553b0f419d259dadb4b9418ff2d00eb43959"},
 ]
 prefect = [
     {file = "prefect-1.2.2-py3-none-any.whl", hash = "sha256:ddf692785da5067c1717c0c03889b9d7c1a8c6a60a404702a9a902195831366b"},
