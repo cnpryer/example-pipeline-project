@@ -1,6 +1,6 @@
-# example-pipeline
+# example-pipeline-project
 
-Example data pipeline project.
+Example data pipeline project structure with modern Python tooling.
 
 ## Subject
 
@@ -28,18 +28,6 @@ graph
     K --> M
     L --> M
 ```
-
-## Goals
-
-In addition to creating a basic data pipeline project, this project will showcase and justify the different tools that could be used.
-
-- Evaluate frameworks for centralizing visibility
-  - Design
-  - Failures
-  - Logging
-  - Metrics
-- Evaluate `DataFrame` libraries for flexibility, performance, and API design
-- Evaluate project flexibility and infrastructure requirements
 
 ## The Data
 
