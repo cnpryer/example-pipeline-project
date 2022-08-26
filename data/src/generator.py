@@ -1,6 +1,6 @@
 # %%
 # setup
-import numpy as np
+import numpy as np  # type: ignore
 import polars as pl
 
 # save dataframe to
